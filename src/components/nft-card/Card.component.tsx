@@ -10,7 +10,7 @@ export function CardMain(props: cardProps) {
     <>
       <Box
         fontSize={{ sm: 'md', base: 'xs' }}
-        w={{ sm: '400px', base: '300px' }} h={{ sm: '620px', base: '550px' }}
+        w={{ sm: '400px', base: '320px' }} h={{ sm: '620px', base: '550px' }}
         padding={6}
         borderRadius='lg'
         bgColor={"#112135"}>
@@ -74,8 +74,8 @@ export function CardMain(props: cardProps) {
                   margin={.5}
                   paddingLeft={3}
                   paddingRight={3}
-                  paddingTop={2}
-                  paddingBottom={2}
+                  paddingTop={{ sm: 2, base: 3 }}
+                  paddingBottom={{ sm: 2, base: 4 }}
                   color="white"
                 >
                   <Box textColor={"#35a024"} textAlign='left'><b>HIGHEST BID</b></Box>
@@ -111,7 +111,7 @@ export function CardMain(props: cardProps) {
                     margin={.5}
                     paddingLeft={3}
                     paddingRight={3}
-                    paddingTop={{ sm: "2", base: "3.5" }}
+                    paddingTop={{ sm: "2", base: "2" }}
                     fontSize={'md'}
                     paddingBottom={2}
                     color="white"
@@ -137,8 +137,8 @@ export function CardMain(props: cardProps) {
                 margin={.5}
                 paddingLeft={3}
                 paddingRight={3}
-                paddingTop={2}
-                paddingBottom={2}
+                paddingTop={{ sm: 2, base: 3 }}
+                paddingBottom={{ sm: 2, base: 4 }}
                 color="white"
               >
                 <Box textColor={"#8aa9cf"}><b>{props.saleType == SaleType.Sale ? "FLASH DEAL ENDS IN" : "AUCTION ENDS IN"}</b></Box>

@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Center minH={'100vh'} h={'auto'} bg={"#091320"}>
-        <Wrap direction={['column', 'row']} spacing='24px' padding={10}>
+        <Wrap direction={['column', 'row']} spacing='24px' padding={{sm:10, base:5}}>
           <CardMain hotDeal
             saleType={SaleType.Auction}
             image={"https://picsum.photos/536/354"}
